@@ -65,8 +65,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   return ListView.builder(
                     itemCount: snapshot.data!.length,
                     itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(index.toString()),
+                      return Card(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Title:\n" + postsList[index].title.toString()),
+                            Text("Description:\n" +postsList[index].body.toString()),
+                          ],
+                        ),
+                        
+                  
                       );
                     },
                   );
