@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_prac_1/example_2.dart';
 import 'package:flutter_prac_1/example_3.dart';
 import 'package:flutter_prac_1/home_screen.dart';
+import 'package:flutter_prac_1/signup.dart';
 
 
 void main() {
@@ -23,7 +24,7 @@ class flutterapp extends StatelessWidget{
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Example3(),
+      home: Signup(),
     );
   }
 
